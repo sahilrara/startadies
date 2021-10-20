@@ -1,0 +1,984 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: sergueUi;
+  src: url("../../Segoe-UI-Font/SEGOEUI.TTF");
+}
+
+:root {
+  /* --color-086dac: #086dac; */
+  --color-161616: #161616;
+  --color-fff: #fff;
+  --color-707070: #707070;
+  --color-e7e3d8: #e7e3d8;
+  --color-dedede: #dedede;
+  --color-0e0e0e: #0e0e0e;
+  --color-f2ba00: #f2ba00;
+  --color-f6f6f6: #f6f6f6;
+  --color-ff4040: #ff4040;
+  --color-130e11: #130e11;
+  --color-a5a5a5: #a5a5a5;
+  --color-CDD9E7: #cdd9e7;
+  --color-07f: #07f;
+  --font-18: 18px;
+  --font-80: 80px;
+  --font-30: 30px;
+  --font-35: 35px;
+  --font-25: 25px;
+  --font-20: 20px;
+  --font-65: 65px;
+  --font-16: 16px;
+  --font-52: 52px;
+  --font-56: 56px;
+  --font-22: 22px;
+  --font-14: 14px;
+  --box-shadow1: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  :root {
+    --font-56: 53px;
+    --font-35: 30px;
+    --font-80: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --font-20: 20px;
+    --font-65: 60px;
+    --font-18: 18px;
+    --font-35: 32px;
+    --font-80: 65px;
+    --font-16: 16px;
+    --font-52: 45px;
+    --font-35: 24px !important;
+    --font-56: 50px;
+    --font-25: 25px;
+    --font-22: 20px;
+    --font-14: 14px;
+  }
+
+  .nav-button {
+    padding: 3px 15px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  :root {
+    --font-20: 20px;
+    --font-65: 55px;
+    --font-18: 17px;
+    --font-56: 50px;
+    --font-80: 60px;
+    --font-16: 15px;
+    --font-35: 29px;
+    --font-25: 22px;
+    --font-52: 40px;
+    --font-22: 19px;
+    --font-14: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --font-20: 18px;
+    --font-65: 50px;
+    --font-18: 15px;
+    --font-30: 27px;
+    --font-25: 21px;
+    --font-56: 29px;
+    --font-80: 38px;
+    --font-35: 26px;
+    --font-16: 14px;
+    --font-52: 42px;
+    --font-22: 18px;
+    --font-14: 14px;
+  }
+
+  .nav-button {
+    padding: 3px 15px !important;
+    margin-top: 10px !important;
+  }
+
+  .w-xs-100 {
+    width: 100% !important;
+  }
+
+  .w-xs-90 {
+    width: 90% !important;
+  }
+}
+
+.background-hero {
+  background-color: var(--color-0e0e0e);
+  min-height: 60vh;
+}
+
+.insight-text {
+  font-size: var(--font-65);
+  color: var(--color-fff);
+  font-family: "Josefin Sans";
+  font-weight: bold;
+}
+
+.insight-para {
+  font-size: var(--font-20);
+  color: var(--color-fff);
+  font-weight: 600;
+  font-family: sergueUi;
+}
+
+.hover-box-shadow:hover {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover-box-shadow:hover .box-text-first {
+  font-family: "Raleway";
+  color: var(--color-ff4040) !important;
+  font-weight: bold;
+  font-size: var(--font-25);
+}
+
+.box-text-first {
+  font-family: "Raleway";
+  color: var(--color-130e11);
+  font-weight: bold;
+  font-size: var(--font-25);
+}
+
+.box-date {
+  font-weight: 600;
+  font-size: var(--font-14);
+  color: var(--color-130e11);
+  opacity: 0.7;
+  font-style: italic;
+  font-family: sergueUi;
+}
+
+.box-para {
+  font-weight: 600;
+  font-size: var(--font-16);
+  color: var(--color-130e11);
+  opacity: 0.7;
+  line-height: 25px;
+  font-family: sergueUi;
+}
+
+.read-more-text {
+  font-family: sergueUi;
+  font-size: var(--font-14);
+  color: var(--color-ff4040);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.approach-text {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: var(--font-56);
+  color: var(--color-130e11);
+}
+
+.c-ff4040 {
+  color: var(--color-ff4040) !important;
+}
+
+.arrow-text {
+  font-family: sergueUi;
+  font-size: var(--font-22);
+  font-weight: 500;
+  color: var(--color-130e11);
+}
+
+.exper-text {
+  font-family: "Josefin Sans";
+  font-size: var(--font-56);
+  color: var(--color-130e11);
+  font-weight: bold;
+}
+
+.bg-f6f6f6 {
+  background-color: var(--color-f6f6f6);
+}
+
+.package-section {
+  background-color: #1a1a1a;
+}
+
+.pac-text {
+  font-size: var(--font-56);
+  font-weight: bold;
+  font-family: "Josefin Sans";
+  color: var(--color-fff);
+}
+
+@media (min-width: 1200px) {
+  .silver-card {
+    background-color: var(--color-fff);
+    height: 740px;
+    border-radius: 20px;
+  }
+
+  .gold-card {
+    background-color: var(--color-fff);
+    height: 800px;
+    border-radius: 20px;
+  }
+
+  .blue-card {
+    background-color: var(--color-fff);
+    height: 740px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .silver-card {
+    background-color: var(--color-fff);
+    height: 740px;
+    border-radius: 20px;
+  }
+
+  .gold-card {
+    background-color: var(--color-fff);
+    height: 740px;
+    border-radius: 20px;
+  }
+
+  .blue-card {
+    background-color: var(--color-fff);
+    height: 740px;
+    border-radius: 20px;
+  }
+}
+
+.silver-text {
+  font-weight: bold;
+  color: var(--color-130e11);
+  font-size: var(--font-30);
+  font-family: "Raleway";
+}
+
+.startet-pack {
+  background-color: var(--color-dedede);
+}
+
+.started-text {
+  font-weight: bold;
+  font-size: var(--font-35);
+  color: var(--color-a5a5a5);
+  font-family: "Poppins";
+}
+
+.durat-text {
+  font-size: var(--font-16);
+  color: var(--color-130e11);
+  font-weight: 500;
+  font-family: sergueUi;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.silver-contact-btn {
+  border-radius: 22px !important;
+  color: var(--color-fff) !important;
+  font-size: var(--font-22) !important;
+  background-color: var(--color-a5a5a5) !important;
+}
+
+.silver-contact-btn:hover {
+  background-color: var(--color-a5a5a5) !important;
+  opacity: 0.9;
+}
+
+.popular-pack {
+  background-color: var(--color-e7e3d8);
+}
+
+.populat-text {
+  font-weight: bold;
+  font-size: var(--font-35);
+  color: var(--color-f2ba00);
+  font-family: "Poppins";
+}
+
+.golden-contact-btn {
+  border-radius: 22px !important;
+  color: var(--color-fff) !important;
+  font-size: var(--font-22) !important;
+  background-color: var(--color-f2ba00) !important;
+}
+
+.golden-contact-btn:hover {
+  background-color: var(--color-f2ba00) !important;
+  opacity: 0.9;
+}
+
+.high-pack {
+  background-color: var(--color-CDD9E7);
+}
+
+.packer-text {
+  color: var(--color-07f);
+  font-weight: bold;
+  font-size: var(--font-35);
+  font-family: "Poppins";
+}
+
+.blue-contact-btn {
+  background-color: var(--color-07f) !important;
+}
+
+.blue-contact-btn:hover {
+  background-color: var(--color-07f) !important;
+  opacity: 0.9;
+}
+
+/* keshav css */
+
+.heading {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  color: var(--color-130e11);
+  font-size: var(--font-56);
+  text-align: center;
+}
+
+.bg-130e11 {
+  border-radius: 15px;
+  background: var(--color-130e11);
+  transition: all 0.4s ease-in-out;
+}
+
+.bg-130e11:hover {
+  filter: drop-shadow(11px 11px 0px rgba(242, 0, 0, 0.85)) !important;
+}
+
+.other-offering-text {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: var(--font-25);
+  text-align: center;
+  color: var(--color-fff);
+}
+
+.how-it-worktext {
+  font-family: "Raleway";
+  color: var(--color-130e11);
+  font-weight: bold;
+  font-size: var(--font-25);
+}
+
+/* manish css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  /* transition: all .2s linear !important; */
+}
+
+.main-heading {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: var(--font-52);
+  /* text-align: left; */
+  color: var(--color-130e11);
+}
+
+.sub-heading {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: var(--font-25);
+  color: var(--color-130e11);
+}
+
+.heading-medium {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: var(--font-22);
+  color: var(--color-130e11);
+}
+
+.body-text {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: var(--font-14);
+  color: var(--color-130e11);
+  opacity: 0.7;
+}
+
+/* --------NAVBAR-CSS-------- */
+.navbar {
+  background: var(--color-161616) !important;
+  filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.1));
+}
+
+.navbar ul li a {
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  padding: 0 !important;
+  position: relative;
+}
+
+.active {
+  font-weight: 700 !important;
+}
+
+.nav-button {
+  padding: 0.5em 1.5em !important;
+  background: var(--color-ff4040);
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 22px;
+}
+
+/* ----------footer-setion-css ----------*/
+
+.foot-icon:hover path {
+  fill: var(--color-ff4040);
+  transition: all 0.2s ease-in-out;
+}
+
+.bg-161616 {
+  background-color: var(--color-161616) !important;
+}
+
+.footer-text {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: var(--font-14);
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer-text {
+  position: relative;
+}
+
+.footer-text:not(.para)::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  bottom: -20% !important;
+  left: 0;
+  background: var(--color-ff4040) !important;
+  transition: all 200ms ease-in-out;
+}
+
+.footer-text:hover:not(.para)::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: -20% !important;
+  left: 0;
+  color: white !important;
+}
+
+.footer-text:not(.para):hover {
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.heading-small {
+  font-family: "Josefin Sans";
+  font-weight: normal;
+  font-size: var(--font-18);
+  color: #fff;
+}
+
+.para {
+  max-width: 419px !important;
+}
+
+.bg-img {
+  background-color: var(--color-0e0e0e);
+}
+
+/* --------------HERO-TO-MAIN-SECTION-ALL-CODE-------------- */
+.lh-2 {
+  line-height: 2;
+}
+
+.lh-2_3 {
+  line-height: 2.3;
+}
+
+.hash-tag {
+  position: relative;
+}
+
+.hash-tag::after {
+  position: absolute;
+  font-family: "Raleway";
+  content: "#";
+  font-weight: 700;
+  font-size: 19px;
+  top: 1px;
+  left: -22px;
+  color: var(--color-ff4040);
+}
+
+@media (max-width: 576px) {
+  .hash-tag::after {
+    position: absolute;
+    font-family: "Raleway";
+    content: "#";
+    font-weight: 700;
+    font-size: 13px;
+    top: 5px;
+    left: -10px;
+    color: var(--color-ff4040);
+  }
+}
+
+.bg-image {
+  object-fit: cover;
+  background-image: url(../img/men-holding-a-pen-with-dairy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.post {
+  border-radius: 20px;
+}
+
+.post:hover {
+  box-shadow: var(--box-shadow1);
+}
+
+.post-link {
+  text-decoration: none;
+  color: var(--color-ff4040);
+  font-weight: 600;
+}
+
+.post-link:hover {
+  text-decoration: none;
+  color: var(--color-ff4040);
+  font-weight: 600;
+}
+
+.category .sub-heading {
+  position: relative;
+}
+
+.category .sub-heading::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: var(--color-ff4040);
+}
+
+.category ul li {
+  list-style-image: url("../img/right-side-arrow.png");
+}
+
+@media (max-width: 992px) {
+  .bg-image {
+    height: 200px;
+    object-fit: cover;
+    background-image: url(../img/men-holding-a-pen-with-dairy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left !important;
+  }
+
+  .category .sub-heading::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 75%;
+    background: var(--color-ff4040);
+  }
+}
+
+@media (min-width: 992px) {
+  .active:not(.nav-button)::after {
+    position: absolute;
+    content: "";
+    display: block !important;
+    height: 5px !important;
+    width: 100% !important;
+    bottom: -100% !important;
+    left: 0 !important;
+    background: var(--color-ff4040);
+    /* transform: translate(0px, 11px); */
+    transform: translate(0, 50%) !important;
+    transition: all 100ms ease-in-out;
+  }
+
+  .nav-link:not(.nav-button)::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 0;
+    bottom: -100%;
+    left: 0;
+    background: var(--color-ff4040);
+    transition: all 100ms ease-in-out;
+  }
+
+  .nav-link:hover:not(.nav-button)::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    /* transform: translate(0px, 11px); */
+    transform: translate(0, 50%) !important;
+  }
+}
+
+/* ADDISTIONAL-MEDIA-QUIRY */
+@media (max-width: 992px) {
+  .navbar ul {
+    line-height: 2;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  /* ADDITIONAL-CALSS */
+  .page-logo {
+    width: 200px;
+  }
+}
+
+/* first page css */
+
+.get-it {
+  font-weight: bold;
+  font-size: var(--font-35);
+  color: var(--color-130e11);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.get-touch-input {
+  border-radius: 4px;
+  height: 53px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.get-touch-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.get-touch-input::placeholder {
+  font-family: "Poppins" !important;
+  font-size: var(--font-16) !important;
+  color: #000 !important;
+  opacity: 0.5 !important;
+}
+
+.get-touch-input {
+  font-family: "Poppins" !important;
+  font-size: var(--font-16) !important;
+  color: #000 !important;
+}
+
+.form-box {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: -9px 10px 46px rgba(0, 0, 0, 0.1);
+}
+
+/* check box css */
+/* This css is for normalizing styles. You can skip this. */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.new {
+  padding: 50px;
+}
+
+.form-group-check {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group-check input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group-check label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group-check label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group-check input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.check-label-text {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: var(--font-16);
+  color: rgb(116, 115, 115);
+}
+
+.send-message-style {
+  background-color: var(--color-130e11) !important;
+  border-radius: 26px !important;
+  color: var(--color-fff) !important;
+  font-size: var(--font-22) !important;
+  font-weight: 600 !important;
+  font-family: sergueUi;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+@media (min-width: 1400px) {
+  .mr-check-box {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mr-left-unk {
+    margin-left: 29px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .fs-992-1200-14 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-group-check input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px !important;
+    left: 7px;
+    width: 6px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+.header-bg {
+  background-color: var(--color-0e0e0e);
+}
+
+.tlas-head {
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-size: var(--font-80);
+  color: var(--color-ff4040);
+}
+
+.bg-ffff {
+  color: var(--color-fff) !important;
+}
+
+.tela-para {
+  font-size: var(--font-25);
+  color: var(--color-fff);
+  font-weight: normal;
+  font-family: sergueUi;
+}
+
+.finacial-text {
+  font-size: var(--font-35);
+  color: var(--color-fff);
+  font-weight: normal;
+  font-family: sergueUi;
+}
+
+@media (min-width: 768px) {
+  .border-right-white {
+    border-right: 4px solid #fff;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .border-right-white {
+    border-bottom: 4px solid #fff !important;
+  }
+}
+
+.get-in-btn {
+  background-color: var(--color-ff4040) !important;
+  border-radius: 25px !important;
+  color: var(--color-fff) !important;
+  font-weight: 600 !important;
+  font-size: var(--font-22) !important;
+  font-family: sergueUi !important;
+}
+
+.get-in-btn:hover {
+  color: var(--color-fff) !important;
+  opacity: 0.9 !important;
+}
+
+.learn-more-head {
+  color: var(--color-fff) !important;
+  font-weight: normal !important;
+  font-size: var(--font-22) !important;
+  font-family: sergueUi !important;
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.how-list-item {
+  font-size: var(--font-16);
+  color: var(--color-130e11);
+  font-weight: 600;
+  font-family: sergueUi !important;
+}
+
+.svg-box-hover:hover .how-list-item {
+  font-size: var(--font-16);
+  color: var(--color-fff);
+  font-weight: 600;
+  font-family: sergueUi !important;
+}
+
+.svg-box-hover:hover path {
+  fill: #ff4040;
+}
+
+.how-box {
+  border-radius: 9px;
+  background-color: var(--color-fff);
+}
+
+.svg-box-hover:hover .how-box {
+  border-radius: 9px;
+  background-color: var(--color-ff4040);
+}
+
+.how-its-head-text {
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-size: var(--font-56);
+  color: #130e11;
+}
+
+.c-f240f {
+  color: var(--color-ff4040);
+}
+
+#scrool-how-section {
+  scroll-behavior: smooth !important;
+}
+
+@media (min-width: 1400px) {
+  .how-its-work-line {
+    border-top: 3px solid #dfdede;
+  }
+
+  .svg-box-hover:hover .how-its-work-line {
+    border-top: 3px solid var(--color-ff4040) !important;
+  }
+
+  .margin-for-plan-line {
+    margin-top: 17px;
+  }
+
+  .margin-for-publish-line {
+    margin-top: 57px;
+  }
+
+  .margin-for-line {
+    margin-top: 36px;
+  }
+
+  .margin-for-develop-line {
+    margin-top: 82px;
+  }
+}
+
+.textdecoration-none {
+  text-decoration: none;
+}
+
+@media (min-width: 992.9px) {
+  .psedou-element-margin .col-lg-6:nth-child(odd) {
+    margin-top: -45px;
+  }
+
+  .psedou-element-margin .col-lg-6:first-child {
+    margin-top: unset !important;
+  }
+}
